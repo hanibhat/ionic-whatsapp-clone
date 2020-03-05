@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      WhatsApp
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="search"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="ellipsis-vertical"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar color="primary">
+    <ion-segment
+      #segment
+      value="ion-sb-1"
+      mode="md"
+      (ionChange)="segmentChanged($event)"
+    >
+      <ion-segment-button layout="icon-only">
+        <ion-label>
+          <ion-icon class="camera-icon" name="camera"></ion-icon>
+        </ion-label>
+      </ion-segment-button>
+      <ion-segment-button>
+        <ion-label>chats</ion-label>
+      </ion-segment-button>
+      <ion-segment-button>
+        <ion-label>status</ion-label>
+      </ion-segment-button>
+      <ion-segment-button>
+        <ion-label>calls</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-slides
+    #slider
+    pager="false"
+    (ionSlideWillChange)="slideChanged()"
+    [options]="slideOpts"
+  >
+    <ion-slide>
+      <h1>Camera works!</h1>
+    </ion-slide>
+    <ion-slide>
+      <app-chats></app-chats>
+    </ion-slide>
+    <ion-slide>
+      <app-status></app-status>
+    </ion-slide>
+    <ion-slide>
+      <app-calls></app-calls>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
