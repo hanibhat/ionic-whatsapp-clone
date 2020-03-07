@@ -2,6 +2,10 @@
 
 This project is an example of developing hybrid mobile applications using the [Ionic framework](https://ionicframework.com/).
 
+<p align="center">
+  <img src="./ionic-whatsapp-clone.gif" width="350" title="WhatsApp Clone" alt="WhatsApp Clone">
+</p>
+
 ## Getting Started
 
 ### Prerequisites
