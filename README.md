@@ -10,7 +10,7 @@ This project is an example of developing hybrid mobile applications using the [I
 
 ### Prerequisites
 
-First of all, make sure you have the following installed in your dev enviornment:
+First of all, make sure you have the following installed in your dev environment:
 
 - [Node.js](https://nodejs.org/en/)
 - [Angular](https://angular.io/guide/setup-local)
